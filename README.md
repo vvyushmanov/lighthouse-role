@@ -1,13 +1,7 @@
 Lighthouse-role
 =========
 
-A role to install Lighthouse (Nginx installation included)
-
-#### Nginx:
-- Install `epel`
-- Install `Nginx`
-- Enable and start Nginx service
-- Create main config for Nginx with a template
+A role to install Lighthouse 
 
 #### Lighthouse:
 - Install `git`
@@ -18,7 +12,7 @@ A role to install Lighthouse (Nginx installation included)
 Requirements
 ------------
 
-No specific requirements.
+A web server (e.g. Nginx) required
 
 Role Variables
 --------------
