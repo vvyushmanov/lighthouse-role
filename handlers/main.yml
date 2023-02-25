@@ -1,2 +1,17 @@
 ---
 # handlers file for lighthouse-role
+- name: Start nginx
+  become: true
+  ansible.builtin.service:
+    name: nginx
+    enabled: true
+    state: restarted
+- name: Reload nginx
+  become: true
+  ansible.builtin.command: nginx -s reload
+- name: Apply SELinux file context
+  become: true
+  ansible.builtin.command: restorecon -iRv {{ lh_location }}
+  notify:
+    - Reload nginx
+

@@ -1,2 +1,3 @@
 ---
-# defaults file for lighthouse-role
+lh_repo: https://github.com/VKCOM/lighthouse.git
+lh_location: /var/www/lighthouse/html
