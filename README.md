@@ -32,11 +32,13 @@ Role Variables
 Example Playbook
 ----------------
 
+```yaml
 - name: Install Lighthouse
   hosts: lighthouse
   tags: lighthouse, full
   roles:
     - lighthouse-role
+```
 
 License
 -------
